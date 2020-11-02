@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body onload="loadNav()" onresize="toggleNav()">
+    <div class="fixed-nav-arrow arrow-position-hidden" id="fixed-nav-arrow"><a href="#home"><img src="img/arrow.png" alt="navigation arrow"></a></div>
+    <nav class="nav-container d-flex flex-align-center nav-container-position-visible" id="navigation">
+        <div class="nav-wrapper page-width mx-auto d-flex flex-align-center flex-justify-space-between">
+            <div class="brand-side">
+                <div class="logo-background static flex-center">
+                    <img src="img/logo-leaf.png" alt="green leaf">
+                </div>
+                <h4 class="brand-name">treehouse</h4>
+            </div>
+            <div class="nav-side">
+                <button class="nav-toggler nav-toggler-position-hidden" id="nav-toggler" onclick="toggleExpandMenu()">
+                    <span class="nav-toggler-icon"></span>
+                </button>
+                <ul class="nav-list-expanding-hidden nav-list-wide-hidden" id="navResponsive">
+                    <li class="nav-item">
+                        <a class="nav-link uppercase" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link uppercase" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link uppercase" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link uppercase" href="#values">Values</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link uppercase" href="#footer">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="header full-height d-flex flex-justify-center" id="home">
+        <div class="center-container d-flex flex-column flex-align-center flex-justify-center">
+            <h1 class="h1 color-white text-center">creative digital solutions</h1>
+            <p class="p text-center">Proin iaculis purus consequat sem cure.</p>
+            <a href="#portfolio" class="button color-white text-center">view portfolio</a>
+        </div>
+    </header>
+    <section class="services page-width mx-auto full-height d-flex flex-column flex-justify-center" id="about">
+        <div class="header-container d-flex flex-column flex-align-center">
+            <h2 class="h2 text-center color-soft-black">professional services</h2>
+            <p class="p text-center color-gray">Proin iaculis purus consequat sem cure</p>
+        </div>
+        <div class="cards-container text-center d-flex flex-justify-center flex-wrap">
+            <div class="card flex-column flex-center">
+                <div class="icon-container flex-center">
+                    <img src="img/icon-heart.png" alt="icon heart">
+                </div>
+                <h3 class="h3 color-soft-black">beautiful designs</h3>
+                <p class="color-gray">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+            </div>
+            <div class="card flex-column flex-center">
+                <div class="icon-container flex-center">
+                    <img src="img/icon-mobile.png" alt="icon mobile">
+                </div>
+                <h3 class="h3 color-soft-black">responsive web</h3>
+                <p class="color-gray">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+            </div>
+            <div class="card flex-column flex-center">
+                <div class="icon-container flex-center">
+                    <img src="img/icon-graph.png" alt="icon graph">
+                </div>
+                <h3 class="h3 color-soft-black">marketing tools</h3>
+                <p class="color-gray">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+            </div>
+        </div>
+    </section>
+    <section class="services2 full-height d-flex" id="services2">
+        <div class="img-gear-container d-flex flex-align-center flex-justify-flex-end">
+            <img class="gear-img" src="img/gear.png" alt="gear image">
+        </div>
+        <div class="content-container d-flex flex-column flex-justify-center">
+            <h2 class="h2 color-white">Just relax <span class="color-green">&</span><span class="line-break"> let us do the heavy lifting</span></h2>
+            <p class="color-white my-1">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+            <div>
+                <div class="d-flex flex-align-center my-1">
+                    <img class="circle-checkmark" src="img/circle-checkmark.png" alt="icon checkmark">
+                    <p class="color-white">Initial Setup & Customizations</p>
+                </div>
+                <div class="d-flex flex-align-center m-1">
+                    <img class="circle-checkmark" src="img/circle-checkmark.png" alt="icon checkmark">
+                    <p class="color-white">Regular Updates</p>
+                </div>
+                <div class="d-flex flex-align-center my-1">
+                    <img class="circle-checkmark" src="img/circle-checkmark.png" alt="icon checkmark">
+                    <p class="color-white">Round The Clock Support</p>
+                </div>
+            </div>
+            <a href="#portfolio" class="button color-white text-center">Learn more</a>
+        </div>
+    </section>
+    <section class="portfolio full-height d-flex flex-wrap" id="portfolio">
+        <div class="hader-wrapper d-flex width-100 flex-justify-center">
+            <div class="header-container page-width text-center d-flex flex-column flex-justify-flex-end">
+                <h2 class="h2 color-soft-black">latest project</h2>
+                <p class="color-gray">Proin iaculis purus consequat sem cureProin iaculis purus consequat sem cure</p>
+            </div>
+        </div>
+        <div class="text-half d-flex flex-column flex-justify-flex-start">
+            <h3 class="h3 color-soft-black">Developing a framework</h3>
+            <p class="p color-gray">Proin iaculis purus consequat sem cure digni ssim donec porttitora entum odio in tincidunt.</p>
+            <div class="card d-flex flex-align-center">
+                <img src="img/icon-basket.png" alt="icon basket">
+                <div class="text-wrap">
+                    <h3 class="h3 color-soft-black">E-Commerce Ready</h3>
+                    <p class="color-gray">Proin iaculis purus consequat sem cure digni ssim.</p>
+                </div>
+            </div>
+            <div class="card d-flex flex-align-center">
+                <img src="img/icon-laptop.png" alt="icon laptop">
+                <div class="text-wrap">
+                    <h3 class="h3 color-soft-black">Powerful SEO Features</h3>
+                    <p class="color-gray">Proin iaculis purus consequat sem cure.</p>
+                </div>
+            </div>
+            <div class="card d-flex flex-align-center">
+                <img src="img/icon-locked.png" alt="icon locked">
+                <div class="text-wrap">
+                    <h3 class="h3 color-soft-black">Secure Encryption</h3>
+                    <p class="color-gray">Proin iaculis purus consequat sem cure iaculis purus.</p>
+                </div>
+            </div>
+            <p class="color-gray">Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in.</p>
+            <div class="view-details-wrap">
+                <a href="#">
+                    <span class="span uppercase color-green bold">View Details</span>
+                    <img src="img/icon-arrow-right.png" alt="icon arrow">
+                </a>
+            </div>
+        </div>
+        <div class="smartphone-img-half">
+            <div class="smartphone-wrap">
+                <img class="smartphone-img" src="img/ipad-full-picture-75p.png" alt="smartphone image">
+                <!-- <img src="img/ipad-picture.png">
+                <img src="img/put-your-design-picture.png"> -->
+            </div>
+        </div>
+    </section>
+    <div class="values-bg full-height width-100 d-flex flex-column flex-justify-center" id="values">
+        <section class="values page-width mx-auto d-flex flex-column flex-justify-center">
+            <div class="header-container d-flex flex-column flex-align-center">
+                <h2 class="h2 text-center color-soft-black">culture & Values</h2>
+                <p class="p text-center color-gray">Proin iaculis purus consequat cure.</p>
+            </div>
+            <div class="cards-container text-center d-flex flex-justify-center flex-wrap">
+                <div class="card d-flex flex-column flex-align-center flex-justify-space-between">
+                    <div class="icon-container flex-center">
+                        <img src="img/icon-music.png" alt="icon music">
+                    </div>
+                    <h3 class="h3 color-soft-black">Work-Life Balance</h3>
+                    <p class="color-gray">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                </div>
+                <div class="card d-flex flex-column flex-align-center flex-justify-space-between">
+                    <div class="icon-container side-lines flex-center">
+                        <img src="img/icon-graph2.png" alt="icon graph">
+                    </div>
+                    <h3 class="h3 color-soft-blacc">Quality Over Quantity</h3>
+                    <p class="color-gray">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                </div>
+                <div class="card d-flex flex-column flex-align-center flex-justify-space-between">
+                    <div class="icon-container flex-center">
+                        <img src="img/icon-star.png" alt="icon star">
+                    </div>
+                    <h3 class="h3 color-soft-black">Deliver Excellence</h3>
+                    <p class="color-gray">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                </div>
+        </section>
+    </div>
+    <section class="clients page-width mx-auto full-height d-flex flex-column flex-justify-center flex-align-center" id="clients">
+        <div class="header-wrap text-center">
+            <h2 class="h2 color-soft-black">our awesome clients</h2>
+            <p class="color-gray">Proin iaculis purus consequat sem cure. </p>
+        </div>
+        <div class="card-quote d-flex flex-justify-center flex-align-center flex-wrap">
+            <div class="portrait-img-wrap d-flex">
+                <img src="img/photo-2.jpg" alt="portrait photo">
+            </div>
+            <div class="quote-wrap text-center">
+                <p class="quote color-gray">“ Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean rhoncus. ” </p>
+                <p class="sign color-green">- Jamie Richardson, Founder of Cocoa Media</p>
+            </div>
+        </div>
+        <div class="card-quote d-flex flex-align-center flex-wrap">
+            <div class="quote-wrap change-order text-center">
+                <p class="quote color-gray">“ Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean rhoncus. ” </p>
+                <p class="sign color-green">- Kim Thompson, Founder of Rainel</p>
+            </div>
+            <div class="portrait-img-wrap change-order">
+                <img class="img" src="img/photo-1.jpg" alt="portrait photo">
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="work-with-us-wrap width-100">
+            <div class="work-with-us page-width mx-auto d-flex flex-column flex-align-center">
+                <h2 class="h2 color-white text-center">ready to talk about your next project?</h2>
+                <button class="footer-button color-white">contact us</button>
+            </div>
+        </div>
+        <div class="partners page-width mx-auto">
+            <div class="partner-logo flex-center">
+                <img src="img/envato.png" alt="logo evanto">
+            </div>
+            <div class="partner-logo flex-center">
+                <img src="img/wordpress.png" alt="logo wordpress">
+            </div>
+            <div class="partner-logo flex-center">
+                <img src="img/tuts.png" alt="logo tuts">
+            </div>
+            <div class="partner-logo flex-center">
+                <img src="img/microlancer.png" alt="logo microlancer">
+            </div>
+        </div>
+        <div class="top-footer-wrap width-100">
+            <div class="top-footer page-width mx-auto">
+                <div class="footer-column">
+                    <h3 class="h3 color-white">Contact Us</h3>
+                    <div class="footer-row d-flex">
+                        <div class="img-wrap">
+                            <img src="img/location.png" alt="icon location">
+                        </div>
+                        <address class="p">
+                            <span class="line-break">55 Main St.</span>
+                            <span class="line-break">Toronto, ON </span>
+                            <span class="line-break">M1H 3A5</span>
+                        </address>
+                    </div>
+                    <div class="footer-row d-flex">
+                        <div class="img-wrap">
+                            <img src="img/iphone-portrait.png" alt="icon iphone">
+                        </div>
+                        <p class="p">(416) 555-5252</p>
+                    </div>
+                    <div class="footer-row d-flex">
+                        <div class="img-wrap">
+                            <img src="img/email.png" alt="icon email">
+                        </div>
+                        <p class="p">hello@treehouse.com</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="h3 color-white">latest post</h3>
+                    <div class="footer-row d-flex">
+                        <div class="img-wrap">
+                            <img src="img/news.png" alt="icon news">
+                        </div>
+                        <p class="p">Made With Love In Toronto</p>
+                    </div>
+                    <div class="footer-row d-flex">
+                        <div class="img-wrap">
+                            <img src="img/photo.png" alt="icon photo">
+                        </div>
+                        <p class="p">Startup News & Emerging Tech</p>
+                    </div>
+                    <div class="footer-row d-flex">
+                        <div class="img-wrap">
+                            <img src="img/news.png" alt="icon news">
+                        </div>
+                        <p class="p">Bitcoin Will Soon Rule The World</p>
+                    </div>
+                    <div class="footer-row d-flex">
+                        <div class="img-wrap">
+                            <img src="img/news.png" alt="icon news">
+                        </div>
+                        <p class="p">Wearable Technology On The Rise</p>
+                    </div>
+                    <div class="footer-row d-flex">
+                        <div class="img-wrap">
+                            <img src="img/media.png" alt="icon media">
+                        </div>
+                        <p class="p">Learn Web Design In 30 Days!</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="h3 color-white">Latest Tweets</h3>
+                    <div class="footer-row d-flex">
+                        <div class="img-wrap">
+                            <img src="img/twitter.png" alt="icon twitter">
+                        </div>
+                        <div>
+                            <p class="p">Confucius: Life is really simple, but we insist on making it complicated.</p>
+                            <p class="p hash-tag bold">#famousquotes</p>
+                            <p class="p sign">8 mins ago</p>
+                        </div>
+                    </div>
+                    <div class="footer-row d-flex">
+                        <div class="img-wrap">
+                            <img src="img/twitter.png" alt="icon twitter">
+                        </div>
+                        <div>
+                            <p class="p">Grab the Free Treehouse web template at FreebiesXpress!</p>
+                            <p class="p hash-tag bold">#freebies #templates</p>
+                            <p class="p sign">2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer page-width mx-auto">
+            <div class="column">
+                <p class="p">© Copyright 2014 <a class="color-gray" href="https://www.freebiesxpress.com/" target="_blank">FreebiesXpress.com</a></p>
+            </div>
+            <div class="column social-media">
+                <a href="https://twitter.com/" target="_blank"><img src="img/twitter2.png" alt="icon twitter"></a>
+                <a href="https://facebook.com/" target="_blank"><img src="img/facebook.png" alt="icon facebook"></a>
+                <a href="https://pinterest.com/" target="_blank"><img src="img/pinterest.png" alt="icon pinterest"></a>
+                <a href="https://plus.google.com/" target="_blank"><img src="img/google.png" alt="icon google-plus"></a>
+            </div>
+            <div class="column">
+                <p class="p">Implementation: raal93@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
